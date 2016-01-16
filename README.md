@@ -11,7 +11,9 @@ You'll need a free account in [Wormhole Network](https://wormhole.network) and t
 
     git clone https://github.com/pjperez/docker-wormhole
     cd docker-wormhole
-    Download your config (.vpn) and linuxconfig files from your dashboard at [Wormhole Network](https://wormhole.network)
+
+Download your config (.vpn) and linuxconfig files from your dashboard at [Wormhole Network](https://wormhole.network) and use them to replace the placeholders before the next step.
+
     sudo docker build -t wormhole/client .
   
 ## Running docker-wormhole
@@ -78,6 +80,8 @@ And this is what the server sees:
 	2016-01-15 19:42:26.519 Session "SID-SECURENAT-1": The DHCP server of host "00-AC-34-A7-D3-1F" (100.64.0.1) on this session allocated, for host "SID-MYUSER-19" on another session "00-AC-34-56-78-12", the new IP address 100.64.0.13.
 
 Now your container is reachable on 100.64.0.13 inside your virtual network. Of course, all the traffic inside the network is encrypted for privacy and security purposes.
+
+**Note:** As soon as the container is connected, it will die. This is **by design** as this container is a mere template to build your own services, boosted by [Wormhole Network](https://wormhole.network) connectivity.
 
 ## Use cases
 
