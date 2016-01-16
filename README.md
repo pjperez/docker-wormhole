@@ -89,7 +89,9 @@ The main use case for docker-wormhole is to make network reachability easier bet
 
 ## Images available
 
-This is a list of available images created from this one:
+Available images based on docker-wormhole:
 
 - [docker-iperfserver](https://github.com/pjperez/docker-iperfserver): iPerf 2 server running on default settings. Reachable through the overlay network.
 - [docker-iperfclient](https://github.com/pjperez/docker-iperfclient): iPerf 2 client running 32 parallel threads. Reaches the iPerf server through the overlay network.
+
+If you build one, send us a link to info@wormhole.network
