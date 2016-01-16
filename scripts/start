@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+# Script to automate Wormhole's Docker container
+# 
+# 
+#
+#  Wormhole Network - 2016
+#
+# This code is made public for our customers and anyone else interested. It might not always reflect the latest version in production.
+#
+#
+# Start the VPN client daemon
+./vpnclient start
+
+# Wait 2s and connect to the local vpnclient daemon with vpncmd
+sleep 2s
+./vpncmd /CLIENT 127.0.0.1:5555 /IN:linuxconfig
+
+# Get a new IP address
+echo "Acquiring IP address..."
+dhclient vpn_wormhole
+echo "IP address acquired!"
