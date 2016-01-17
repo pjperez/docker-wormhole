@@ -3,7 +3,7 @@ Wormhole Docker base image (Based on Ubuntu 14.04)
 
 This image automatically connects your container to Wormhole Network, an overlay network solution that enables networking between your Docker containers on different hosts. This way you can move your containers to different servers, even on different hosting locations, without having to change your application's architecture.
 
-The image is meant to serve as a base image for your own containers.
+The image is meant to serve as a base image for your own containers. Please clone this repository or fork it to build your own images with Wormhole's overlay networking included.
 
 You'll need a free account in [Wormhole Network](https://wormhole.network) and to create a hub and a hub user. See [How do I start?](https://wormhole.zendesk.com/hc/en-gb/articles/207287035) for simple instructions.
 
@@ -89,8 +89,13 @@ The main use case for docker-wormhole is to make network reachability easier bet
 
 ## Images available
 
-This is a list of available images created from this one:
+Available images based on docker-wormhole:
 
 - [docker-iperfserver](https://github.com/pjperez/docker-iperfserver): iPerf 2 server running on default settings. Reachable through the overlay network.
 - [docker-iperfclient](https://github.com/pjperez/docker-iperfclient): iPerf 2 client running 32 parallel threads. Reaches the iPerf server through the overlay network.
+<<<<<<< HEAD
 - **NEW** [docker-whminecraft](https://github.com/pjperez/docker-whminecraft): The easiest Minecraft server to laucnh and join, ever!! It works out of the box on any network. Powered by Wormhole's overlay network.
+=======
+
+If you build one, send us a link to info@wormhole.network
+>>>>>>> origin/master
