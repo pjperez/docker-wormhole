@@ -95,7 +95,5 @@ Available images based on docker-wormhole:
 - [docker-iperfclient](https://github.com/pjperez/docker-iperfclient): iPerf 2 client running 32 parallel threads. Reaches the iPerf server through the overlay network.
 <<<<<<< HEAD
 - **NEW** [docker-whminecraft](https://github.com/pjperez/docker-whminecraft): The easiest Minecraft server to laucnh and join, ever!! It works out of the box on any network. Powered by Wormhole's overlay network.
-=======
 
 If you build one, send us a link to info@wormhole.network
->>>>>>> origin/master
