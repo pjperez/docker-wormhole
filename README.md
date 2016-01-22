@@ -18,9 +18,9 @@ Download your config (.vpn) and linuxconfig files from your dashboard at [Wormho
   
 ## Running docker-wormhole
 
-    sudo docker run -t -i --privileged=true wormhole/client
+    sudo docker run --rm -t -i --device=/dev/net/tun --cap-add=NET_ADMIN wormhole/client
 
-It is important to include the **--privileged=true** parameter to be able to create a new interface for the overlay network and the **-i** flag to make the session interactive, as you'll be asked to input your hub user's password twice.
+It is important to keep **-i** flag to make the session interactive, as you'll be asked to input your hub user's password twice. The --cap-add=NET_ADMIN and --device=/dev/net/tun are needed for SoftEther to create the tun adapter inside the container.
 
 This is what you'll see after running it:
 
@@ -94,6 +94,6 @@ Available images based on docker-wormhole:
 - [docker-iperfserver](https://github.com/pjperez/docker-iperfserver): iPerf 2 server running on default settings. Reachable through the overlay network.
 - [docker-iperfclient](https://github.com/pjperez/docker-iperfclient): iPerf 2 client running 32 parallel threads. Reaches the iPerf server through the overlay network.
 <<<<<<< HEAD
-- **NEW** [docker-whminecraft](https://github.com/pjperez/docker-whminecraft): The easiest Minecraft server to laucnh and join, ever!! It works out of the box on any network. Powered by Wormhole's overlay network.
+- **NEW** [docker-whminecraft](https://github.com/pjperez/docker-whminecraft): The easiest Minecraft server to launch and join, ever!! It works out of the box on any network. Powered by Wormhole's overlay network.
 
 If you build one, send us a link to info@wormhole.network
