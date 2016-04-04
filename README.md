@@ -5,7 +5,7 @@ This image automatically connects your container to Wormhole Network, an overlay
 
 The image is meant to serve as a base image for your own containers. Please clone this repository or fork it to build your own images with Wormhole's overlay networking included.
 
-You'll need a free account in [Wormhole Network](https://wormhole.network) and to create a hub and a hub user. See [How do I start?](https://wormhole.zendesk.com/hc/en-gb/articles/207287035) for simple instructions.
+You'll need a free account in [Wormhole Network](https://wormhole.network) and to create a hub and a hub user. See the [documentation](https://wormhole.network/docs/) for simple instructions.
 
 ## Building docker-wormhole
 
